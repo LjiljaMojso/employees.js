@@ -4,11 +4,13 @@ async function getDataSalaries(path, path2) {
   const response2 = await fetch(`${path2}`);
   const data = await response.json();
   const data2 = await response2.json();
-
-  employeesWithSalaries(data, data2);
+  return employeesWithSalaries(data, data2);
 }
-getDataSalaries()
-  .then((response) => console.log("corect data"))
+getDataSalaries("./fake-server/salaries.json", "./fake-server/employees.json")
+  .then((data) => {
+    data.sort((a, b) => a?.salary - b?.salary);
+    console.log(data);
+  })
   .catch((err) => console.log("error"));
 const employeesWithSalaries = (arr1, arr2) => {
   let temp = [];
@@ -20,8 +22,7 @@ const employeesWithSalaries = (arr1, arr2) => {
       }
     });
   });
-  temp.sort((a, b) => a?.salary - b?.salary);
-  console.log(temp);
   return temp;
 };
+
 module.exports = getDataSalaries;
