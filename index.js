@@ -1,7 +1,7 @@
 //solution try
-async function getDataSalaries() {
-  const response = await fetch("../fake-server/salaries.json");
-  const response2 = await fetch("../fake-server/employees.json");
+async function getDataSalaries(path, path2) {
+  const response = await fetch(`${path}`);
+  const response2 = await fetch(`${path2}`);
   const data = await response.json();
   const data2 = await response2.json();
 
