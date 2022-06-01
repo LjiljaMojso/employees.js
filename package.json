@@ -1,0 +1,19 @@
+{
+  "name": "employees.js",
+  "version": "1.0.0",
+  "description": "Function for retrieving employees with their salaries from the server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LjiljaMojso/employees.js.git"
+  },
+  "author": "LjiljaMojso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LjiljaMojso/employees.js/issues"
+  },
+  "homepage": "https://github.com/LjiljaMojso/employees.js#readme"
+}
