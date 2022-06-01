@@ -1,6 +1,6 @@
 {
   "name": "employees.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Function for retrieving employees with their salaries from the server",
   "main": "index.js",
   "scripts": {
